@@ -55,9 +55,10 @@ The results of my model inference for each model trained are located in folders 
 2. Retraining of models
 
 ## Trained YOLOv4 model weights
-You may download the model weights that were saved during the process of training fromthe following link [trained_weights]()
+You may download the model weights that were saved during the process of training fromthe following link [trained_weights](https://drive.google.com/file/d/107W85LuYDNhOcZdQ6jXGrlYnUTqPlXQI/view?usp=sharing). 
 
-2. Retrain model with additional data while attempting to strike a balanced representation of image resolutions and vehicle types for modelling.
+Extract the files and put them into darknet/backup folder after darknet folder has been cloned into the repository to facilitate model inference using trained-weights.
+
 ## Data Dictionary of annotation made using makesense.ai
 ---
 |Feature|Type|Description|
