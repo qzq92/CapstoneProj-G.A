@@ -72,21 +72,26 @@ Please adjust the settings in makefile based on your PC specs and run make.
 Ensure the path for pkgconfig is set: PKG_CONFIG_PATH=$PKG_CONFIG_PATH:"/usr/local/lib/pkgconfig"
 
 ## Compile & install Darknet (requires cmake version 3.18 and higher).
-Follow the setup instructions as listed in the repository by AlexeyAB using the link below. It also provides information on how to tune parameters for model training. Pre-train weights for YOLOv3 and YOLOv4 models are also found in the official repository, please follow the steps in downloading the weights and move them to the darknet folder.
+Follow the setup instructions as stated in the repository of AlexeyAB using the link below. It also provides information on how to tune parameters for model training. Pre-train weights for YOLO models are also found in the official repository, please follow the steps in downloading the weights and move them to the darknet folder.
 [Darknet](https://github.com/AlexeyAB/darknet#requirements)
 
 **Important notes:** 
 By cloning the darknet directory, it comes with the LTA data that I have placed in YOLO darknet/data/obj directory where it has been already split into train and test folder. You should not need to modify lta_train.txt and lta_validation.txt as they point to the image files using relative paths which is required to train YOLO model.
 
 
-# Additional things to be copied over if you are using clean setup instead of mine.
-1. yolov4-lta.cfg should be inside darknet/cfg folder
+# Additional things to be copied over from darknet_extra_files if you are cloning Darknet repository directly.
+1. All cfg files inside should be inside darknet/cfg folder
 
-2. lta_train.txt, lta_validation.txt, train and validation folders should be inside darknet/data/obj folder.
+2. Copy over the obj folder into darknet/data folder.
 
-3. lta.data and lta.names should be copied into darknet/data folder. No change in content is requireed as relative path are used.
+3. lta.data and lta.names should be copied into darknet/data folder. No change in content is required as relative path are used.
 
-4. Please download the weights from the links given in the actual darknet repository which is accessible from the hyperlink provided above.
+4. Pre-trained YOLO weights can be downloaded by referencing the README in the actual darknet repository, which is accessible from the hyperlink provided above. Alternatively, to train YOLOv3 and YOLOv4 models, you can run the following commands:
+```
+- $ wget https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.weights
+
+- $ wget https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.conv.137
+```
 
 # Troubleshooting:
 1. In case of Errors during make indicating opencv not found in pkg-config during building darknet process. Run following command:

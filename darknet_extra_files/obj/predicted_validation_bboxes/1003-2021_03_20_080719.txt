@@ -1,0 +1,19 @@
+net.optimized_memory = 0 
+mini_batch = 1, batch = 64, time_steps = 1, train = 0 
+Create CUDA-stream - 0 
+ Create cudnn-handle 0 
+nms_kind: greedynms (1), beta = 0.600000 
+nms_kind: greedynms (1), beta = 0.600000 
+nms_kind: greedynms (1), beta = 0.600000 
+
+ seen 64, trained: 192 K-images (3 Kilo-batches_64) 
+ Detection layer: 139 - type = 28 
+ Detection layer: 150 - type = 28 
+ Detection layer: 161 - type = 28 
+/home/qzq/G.A/projects/capstone/darknet/data/obj/validation/1003-2021_03_20_080719.jpg: Predicted in 347.151000 milli-seconds.
+car: 35%	(left_x:  122   top_y:  107   width:    8   height:   13)
+car: 47%	(left_x:  128   top_y:  100   width:   11   height:   10)
+car: 92%	(left_x:  146   top_y:  128   width:   21   height:   16)
+car: 58%	(left_x:  170   top_y:   91   width:   11   height:    9)
+car: 74%	(left_x:  242   top_y:  107   width:   19   height:   11)
+lorry_truck: 50%	(left_x:  271   top_y:   86   width:   19   height:   19)

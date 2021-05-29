@@ -18,6 +18,11 @@ The IDs are:
 - 8701, 8702, 8704 and 8706
 - 9704, 9705 and 9706
 
+## Dataset download link
+Please download the dataset represented with LTAdatasets.zip from the following link: [Dataset Download](https://drive.google.com/file/d/16oQZaxut5It0w1zQXFlTTB1gB6jktqAy/view?usp=sharing)
+
+Unzip the file and you will see 87 folders with 4 digit identifier containing traffic footages of a particular location.
+
 ### Annotation tool used for annotating data: Makesense.ai
 - Link to browser tool: [Makesense.ai](https://www.makesense.ai/)
 
@@ -25,6 +30,9 @@ The IDs are:
 - Darknet framework for object detection work: [Darknet](https://github.com/AlexeyAB/darknet)
 - Mean Average Precision evaluation: [mAP](https://github.com/Cartucho/mAP)
 - Open Source Computer Vision Library: [OpenCV](https://github.com/opencv/opencv)
+
+## Installation and Setup
+Please refer to the installation.md file in the repository. You may need to clone Darknet repository and download certain files such as model weights online to facilitate model inference on the dataset.
 
 ## Background
 In Singapore, there are about 1 million vehicles that is on our road network of more than 9,000 lane-kilometres which constitutes up to 12% of our land and road maintenance is currently maintained by Land Transport Authority (LTA). It has been known that roads, and means of transport, make a crucial contribution to economic development and growth and bring important social benefits, which is extremely important for Singapore. Reference: [Ministry of Transport, Singapore](https://www.mot.gov.sg/About-MOT/Land-Transport/Motoring/Road-Network/)
@@ -44,6 +52,10 @@ The results of my model inference for each model trained are located in folders 
 
 ## Future work
 1. Continuation of image labelling
+2. Retraining of models
+
+## Trained YOLOv4 model weights
+You may download the model weights that were saved during the process of training fromthe following link [trained_weights]()
 
 2. Retrain model with additional data while attempting to strike a balanced representation of image resolutions and vehicle types for modelling.
 ## Data Dictionary of annotation made using makesense.ai
