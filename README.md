@@ -32,7 +32,7 @@ Unzip the file and you will see 87 folders with 4 digit identifier containing tr
 - Open Source Computer Vision Library: [OpenCV](https://github.com/opencv/opencv)
 
 ## Installation and Setup
-Please refer to the installation.md file in the repository. You may need to clone Darknet repository and download certain files such as model weights online to facilitate model inference on the dataset.
+Please refer to the installation.md file in the repository. You may need to clone Darknet repository as the implementation of model used for training is reference from the guide inside the Darknet repository. In addition, there maybe a need to download pre-trained model weights online to facilitate model training on the dataset if you need to train your own model.
 
 ## Background
 In Singapore, there are about 1 million vehicles that is on our road network of more than 9,000 lane-kilometres which constitutes up to 12% of our land and road maintenance is currently maintained by Land Transport Authority (LTA). It has been known that roads, and means of transport, make a crucial contribution to economic development and growth and bring important social benefits, which is extremely important for Singapore. Reference: [Ministry of Transport, Singapore](https://www.mot.gov.sg/About-MOT/Land-Transport/Motoring/Road-Network/)
