@@ -1,0 +1,5 @@
+car
+lorry/truck
+van
+bike
+bus
