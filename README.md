@@ -75,7 +75,8 @@ Please follow the steps below to setup your environment for model training with 
 - git-lfs (tool to extend git for versioning large files) --Optional
 
 ## Dataset download link
-Please download the dataset represented with LTAdatasets.zip from the following link: [Dataset Download](https://drive.google.com/file/d/16oQZaxut5It0w1zQXFlTTB1gB6jktqAy/view?usp=sharing)
+Please download the dataset represented with LTAdatasets.zip from the following link: [Dataset Download](https://drive.google.com/file/d/16oQZaxut5It0w1zQXFlTTB1gB6jktqAy/view?usp=sharing).
+
 Unzip the file and you will see 87 folders with 4 digit identifier containing traffic footages of a particular location.
 
 ## Trained YOLOv4 model weights
@@ -141,7 +142,7 @@ Please adjust the settings in makefile based on your PC specs and run make.
 Ensure the path for pkgconfig is set: PKG_CONFIG_PATH=$PKG_CONFIG_PATH:"/usr/local/lib/pkgconfig"
 
 ## Compile & install Darknet (requires cmake version 3.18 and higher).
-Follow the setup instructions as stated in the repository of AlexeyAB using the link below. It also provides information on how to tune parameters for model training. Pre-train weights for YOLO models are also found in the official repository, please follow the steps in downloading the weights and move them to the darknet folder. Link to Darknet repository as follows: 
+Follow the setup instructions as stated in the repository of AlexeyAB using the link below. It also provides information on how to tune parameters for model training. Pre-train weights for YOLO models are also found in the official repository, please follow the steps in downloading the weights and move them to the darknet folder. Link to Darknet repository as follows:
 [Darknet](https://github.com/AlexeyAB/darknet#requirements)
 
 **Important notes:** 
