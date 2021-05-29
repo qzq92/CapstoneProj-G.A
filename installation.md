@@ -92,6 +92,10 @@ By cloning the darknet directory, it comes with the LTA data that I have placed 
 
 - $ wget https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.conv.137
 ```
+5. Copy over demo.sh into darknet folder to run inference with trained weights on a stiched mp4 video. Example of the command is as follows 
+```
+./darknet detector demo data/lta.data backup/default10k_416wh/yolov4-lta.cfg backup/default10k_416wh/yolov4-lta_best.weights ../LTAdatasets/1711/lta_image_video_1711.mp4 -ext_output
+```
 
 # Troubleshooting:
 1. In case of Errors during make indicating opencv not found in pkg-config during building darknet process. Run following command:
