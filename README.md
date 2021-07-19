@@ -75,14 +75,14 @@ Please follow the steps below to setup your environment for model training with 
 - git-lfs (tool to extend git for versioning large files) --Optional
 
 ## Dataset download link
-Please download the dataset represented with LTAdatasets.zip from the following link: [Dataset download link](https://drive.google.com/file/d/16oQZaxut5It0w1zQXFlTTB1gB6jktqAy/view?usp=sharing).
+Please download the dataset represented with LTAdatasets.zip and place it in the working directory where the repo is cloned from the following link: [Dataset download link](https://drive.google.com/file/d/16oQZaxut5It0w1zQXFlTTB1gB6jktqAy/view?usp=sharing).
 
 Unzip the file and you will see 87 folders with 4 digit identifier containing traffic footages of a particular location.
 
 ## Trained YOLOv4 model weights
 You may download the model weights that were saved during the process of training from the following link. [Trained_weights](https://drive.google.com/file/d/107W85LuYDNhOcZdQ6jXGrlYnUTqPlXQI/view?usp=sharing). 
 
-Extract the files and put them into darknet/backup folder after darknet folder has been cloned into the repository to facilitate model inference using trained-weights.
+Extract the folders and place them into `darknet/backup` folder after darknet folder has been cloned into the repository to facilitate model inference using trained-weights.
 
 # Installation of libraries
 
