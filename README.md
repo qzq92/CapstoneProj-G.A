@@ -19,7 +19,7 @@ The IDs are:
 - 9704, 9705 and 9706
 
 ### Annotation tool used for annotating data: Makesense.ai
-- Link to browser tool: [Makesense.ai](https://www.makesense.ai/)
+- Web link to annotation tool: [Makesense.ai](https://www.makesense.ai/)
 
 ### Codes and repositories required
 - Darknet framework for object detection work: [Darknet](https://github.com/AlexeyAB/darknet) - To be manually cloned onto this repository subsequently.
