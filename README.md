@@ -93,7 +93,7 @@ $ conda install -c conda-forge opencv
 ```
 
 ## Setting up binaries for YOLO framework 
-[reference](https://medium.com/nerd-for-tech/install-opencv-from-source-for-yolov4-for-ubuntu-ccfa9405a3c3)
+Refer to the medium article for installation of opencv for yolov4. [reference](https://medium.com/nerd-for-tech/install-opencv-from-source-for-yolov4-for-ubuntu-ccfa9405a3c3)
 
 ## Installing CMake and gcc g++ compilers on your computer
 ```
