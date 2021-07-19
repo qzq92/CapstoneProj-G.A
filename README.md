@@ -136,7 +136,9 @@ Please adjust the settings in makefile based on your PC specs and run make.
 Ensure the path for pkgconfig is set: PKG_CONFIG_PATH=$PKG_CONFIG_PATH:"/usr/local/lib/pkgconfig"
 
 ## Compile & install Darknet (requires cmake version 3.18 and higher).
-Follow the setup instructions as stated in the repository of AlexeyAB using the link below. It also provides information on how to tune parameters for model training. Pre-train weights for YOLO models are also found in the official repository, please follow the steps in downloading the weights and move them to the darknet folder. Link to Darknet repository as follows:
+Follow the setup instructions as stated in the repository of AlexeyAB using the link below. For my case, I referred to the `make` section to compile and install darknet framework. 
+
+The repository also provides information on how to tune parameters for model training, as well as downloadable pre-train weights for YOLO models. Please follow the steps in downloading the weights and move them to the darknet folder. Link to Darknet repository as follows:
 [Darknet](https://github.com/AlexeyAB/darknet#requirements)
 
 **Important notes:** 
