@@ -143,7 +143,7 @@ Follow the setup instructions as stated in the repository of AlexeyAB using the 
 By cloning the darknet directory, it comes with the LTA data that I have placed in YOLO darknet/data/obj directory where it has been already split into train and test folder. You should not need to modify lta_train.txt and lta_validation.txt as they point to the image files using relative paths which is required to train YOLO model.
 
 
-# Additional things to be copied over from darknet_extra_files if you are cloning Darknet repository directly.
+## Additional things to be copied over from `darknet_extra_files` if you are cloning Darknet repository directly from official source.
 1. All cfg files inside should be inside darknet/cfg folder
 
 2. Copy over the obj folder into darknet/data folder.
