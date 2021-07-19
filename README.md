@@ -127,9 +127,9 @@ $ sudo make install
 $ sudo apt-get install libopencv-dev
 ```
 
-Check opencv binary version
+Check opencv binary version (should be at least 4.5.2-dev as of writing)
 ```
-$ opencv_version (4.5.2-dev)
+$ opencv_version
 ```
 
 Please adjust the settings in makefile based on your PC specs and run make. 
