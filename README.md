@@ -95,13 +95,7 @@ $ conda install -c conda-forge opencv
 ## Setting up binaries for YOLO framework 
 Refer to the medium article for installation of opencv for yolov4. [Article link](https://medium.com/nerd-for-tech/install-opencv-from-source-for-yolov4-for-ubuntu-ccfa9405a3c3)
 
-## Installing CMake and gcc g++ compilers on your computer
-```
-$ sudo apt-get install cmake
-$ sudo apt-get install gcc g++
-```
-
-## Add Kitware signing key and add repository to linux source list
+## Install Cmake, gcc and g++ with supported version by adding Kitware signing key and add repository to linux source list
 ```
 $ wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null | gpg --dearmor - | sudo tee /etc/apt/trusted.gpg.d/kitware.gpg >/dev/null
 $ sudo apt-add-repository 'deb https://apt.kitware.com/ubuntu/ bionic main'
