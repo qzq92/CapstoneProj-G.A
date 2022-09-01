@@ -9,7 +9,9 @@ Data was tidied up and stored under LTAdatasets folder(available on Google Drive
 
 In each subfolders, it contains subfolders named *annotate* and *unannotate* CCTV footages. In the *annotate* subfolder, there are 100 images which comprises 50 images representing traffic footages from 6AM to 10AM period and another 50 images representing traffic footages from 6PM to 10PM period. All other time periods traffic footages are stored in "unannotate" folder. 
 
-Due to time constraints, only 27 CCTV IDs comprising of 100 images in the annotated subfolders were manually annotated by myself for model training purposes. **Please note that the images are not in HD format and hence images maybe blurry for some locations in conjunction with environment factors.**
+Due to time constraints, only 27 CCTV IDs comprising of 100 images in the annotated subfolders were manually annotated by myself for model training purposes. **Please note that the images are not in HD format and hence images maybe blurry for some locations in conjunction with environment factors.** 
+
+Stitched video of images in the 27 stated CCTV IDs are also available if you want to test model inference on video instead.[Stitched video download] (https://drive.google.com/file/d/1hgiw6rlvBf9W1ApU4UIFBbEjAiQC1xoT/view?usp=sharing)
 
 The IDs are:
 - 1001 to 1006 (inclusive)
