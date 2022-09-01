@@ -3,9 +3,9 @@
 ## Acknowledgement
 
 ### Data source
-Traffic images were scraped on 20 March 2021 from 0000 to 2359 hours periodic at 1 minute intervals via Data.gov.sg by running my own scrap_lta_cctv.py file which would make a web API call to data.gov.sg via https://api.data.gov.sg/v1/transport/traffic-images. Details on the parameters returned from the API: [Traffic images](https://data.gov.sg/dataset/traffic-images). 
+Traffic images were scraped on 20 March 2021 from 0000 to 2359 hours periodic at 1 minute intervals via Data.gov.sg by running my own scrap_lta_cctv.py file which would make a web API call to data.gov.sg via https://api.data.gov.sg/v1/transport/traffic-images. Details on the parameters returned from the API can be referenced in the following link: [Traffic images](https://data.gov.sg/dataset/traffic-images). 
 
-Data was tidied up and stored under LTAdatasets folder grouped by CCTV IDs folders, (eg. 1001). 
+Data was tidied up and stored under LTAdatasets folder(available on Google Drive for download) which are grouped in folders by CCTV IDs representing different CCTV locations in Singapore, (eg. 1001). The dataset can be downloaded via [Dataset](https://drive.google.com/file/d/16oQZaxut5It0w1zQXFlTTB1gB6jktqAy/view?usp=sharing). Upon downloading, please extract and place it in the working directory where the repo is cloned. There would be 87 folders with 4 digit identifier containing traffic footages of a particular location.
 
 In each subfolders, it contains subfolders of annotate and unannotate CCTV footages. In the annotate subfolder, there are 100 images which comprises 50 images representing traffic footages from 6AM to 10AM period and the other 50 images representing traffic footages from 6PM to 10PM period. All other time periods traffic footages are stored in unannotate. 
 
@@ -74,10 +74,6 @@ Please follow the steps below to setup your environment for model training with 
 - git (tool for code versioning) 
 - git-lfs (tool to extend git for versioning large files) --Optional
 
-## Dataset download link
-Please download the dataset represented with LTAdatasets.zip and place it in the working directory where the repo is cloned from the following link: [Dataset download link](https://drive.google.com/file/d/16oQZaxut5It0w1zQXFlTTB1gB6jktqAy/view?usp=sharing).
-
-Unzip the file and you will see 87 folders with 4 digit identifier containing traffic footages of a particular location.
 
 ## Trained YOLOv4 model weights
 You may download the model weights that were saved during the process of training from the following link. [Trained_weights](https://drive.google.com/file/d/107W85LuYDNhOcZdQ6jXGrlYnUTqPlXQI/view?usp=sharing). 
