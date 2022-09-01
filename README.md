@@ -7,9 +7,10 @@ Traffic images were scraped on 20 March 2021 from 0000 to 2359 hours periodic at
 
 Data was tidied up and stored under LTAdatasets folder(available on Google Drive for download) which are grouped in folders by CCTV IDs representing different CCTV locations in Singapore, (eg. 1001). The dataset can be downloaded via [Dataset](https://drive.google.com/file/d/16oQZaxut5It0w1zQXFlTTB1gB6jktqAy/view?usp=sharing). Upon downloading, please extract and place it in the working directory where the repo is cloned. There would be 87 folders with 4 digit identifier containing traffic footages of a particular location.
 
-In each subfolders, it contains subfolders of annotate and unannotate CCTV footages. In the annotate subfolder, there are 100 images which comprises 50 images representing traffic footages from 6AM to 10AM period and the other 50 images representing traffic footages from 6PM to 10PM period. All other time periods traffic footages are stored in unannotate. 
+In each subfolders, it contains subfolders named *annotate* and *unannotate* CCTV footages. In the *annotate* subfolder, there are 100 images which comprises 50 images representing traffic footages from 6AM to 10AM period and another 50 images representing traffic footages from 6PM to 10PM period. All other time periods traffic footages are stored in "unannotate" folder. 
 
-Due to time constraints, only 27 CCTV IDs comprising of 100 images in the annotated subfolders were actually annotated.
+Due to time constraints, only 27 CCTV IDs comprising of 100 images in the annotated subfolders were manually annotated by myself for model training purposes. **Please note that the images are not in HD format and hence images maybe blurry for some locations in conjunction with environment factors.**
+
 The IDs are:
 - 1001 to 1006 (inclusive)
 - 1501 to 1505 (inclusive)
@@ -20,6 +21,8 @@ The IDs are:
 
 ### Annotation tool used for annotating data: Makesense.ai
 - Web link to annotation tool: [Makesense.ai](https://www.makesense.ai/)
+- *labels.txt* file containing the general vehicle classes is used for annotation (car, lorry_truck, van, bike and bus)
+- Annotations are made on vehicles in the footages which are identifiable by human eye and in about 50-75% of the foreground of the images.
 
 ### Codes and repositories required
 - Darknet framework for object detection work: [Darknet](https://github.com/AlexeyAB/darknet) - To be manually cloned onto this repository subsequently.
