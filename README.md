@@ -16,7 +16,7 @@ Stitched video of images in the 27 stated CCTV IDs are also available if you wan
 The IDs are:
 - 1001 to 1006 (inclusive)
 - 1501 to 1505 (inclusive)
-- 2701 to 2705(inclusive) and 2708
+- 2701 to 2706 (inclusive) and 2708
 - 3702, 3704 and 3705
 - 8701, 8702, 8704 and 8706
 - 9704, 9705 and 9706
