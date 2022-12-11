@@ -72,37 +72,24 @@ def scrape_traffic_image(args_parsed):
     cctv_feed = api_query(args_parsed)
 
     number_of_cameras = len(cctv_feed[0]["cameras"])
-    try:
-        # Open file in append mode and creates if does not exist
-        with open(args_parsed.metadata_file, mode='a+', encoding='utf-8') as csv_file:
-            # Define headers and write
-            headers = ['timestamp', 'image_url', 'file_name', 'lon', 'lat', 'camera_id','height','width','md5']
-            writer = csv.DictWriter(csv_file, fieldnames = headers)
-            # Metadata extraction for each camera
-            for i in range(number_of_cameras):
-                logging.info("Processing %s out of %s", i+1,number_of_cameras)
-                camera_feed = cctv_feed[0]["cameras"][i]
 
-                # Process information to dictionary
-                metadata_dict = {"timestamp" : camera_feed["timestamp"],
-                      "image_url": camera_feed["image"],
-                        "lat": camera_feed["location"]["latitude"],
-                        "lon": camera_feed["location"]["longitude"],
-                        "camera_id": camera_feed["camera_id"],
-                        "height": camera_feed["image_metadata"]["height"],
-                        "width": camera_feed["image_metadata"]["width"],
-                        "md5": camera_feed["image_metadata"]["md5"]
-                }
-                metadata_dict = OrderedDict(metadata_dict)
-                # Download cctv feed
-                download_cctv_feed(args_parsed, metadata_dict)
+    for i in range(number_of_cameras):
+        logging.info("Processing %s out of %s", i+1,number_of_cameras)
+        camera_feed = cctv_feed[0]["cameras"][i]
 
-                # Write information to a csv file
-                writer.writerow(metadata_dict)
-    except IOError as exc:
-        logging.error("I/O error encountered when opening %s", args_parsed.metadata_file)
-        raise IOError from exc
-    
+        # Process information to dictionary
+        metadata_dict = {"timestamp" : camera_feed["timestamp"],
+              "image_url": camera_feed["image"],
+                "lat": camera_feed["location"]["latitude"],
+                "lon": camera_feed["location"]["longitude"],
+                "camera_id": camera_feed["camera_id"],
+                "height": camera_feed["image_metadata"]["height"],
+                "width": camera_feed["image_metadata"]["width"],
+                "md5": camera_feed["image_metadata"]["md5"]
+        }
+        metadata_dict = OrderedDict(metadata_dict)
+        # Download cctv feed
+        download_cctv_feed(args_parsed, metadata_dict)
     return None
 
 def download_cctv_feed(args_parsed, metadata_dict):
