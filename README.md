@@ -24,8 +24,7 @@ The annotated IDs are:
 (*Update: As a result, total 28 CCTV IDs are used for annotations*)
 
 ## Camera ID geolocations information as of 13 Dec 2022. [Update]
-Alternatively, you may refer to the file *camera_coordinates.csv*
----
+
 |ID|Lat|Lon|Description of Location|
 |---|---|---|---|
 |1001|1.29531332|103.871146|ECP/MCE/KPE instersection|
@@ -116,7 +115,7 @@ Alternatively, you may refer to the file *camera_coordinates.csv*
 |9705|1.42627712|103.7871664|SLE Marsiling Flyover|
 |9706|1.41270056|103.8064271|SLE Mandai Lake Flyover|
 
-
+Alternatively, you may refer to the file *camera_coordinates.csv*
 
 ### Annotation tool used for annotating data: Makesense.ai
 - Web link to annotation tool: [Makesense.ai](https://www.makesense.ai/)
