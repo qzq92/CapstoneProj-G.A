@@ -3,7 +3,7 @@
 ## Acknowledgement
 
 ### Data source
-Traffic images were scraped during the period of **20 March 2021** from **0000 to 2359 hours** periodic at 1 minute intervals via Data.gov.sg by running my own scrap_lta_cctv.py file which would make a web API call to **data.gov.sg** via https://api.data.gov.sg/v1/transport/traffic-images. Details on the parameters returned from the API can be referenced in the following link: [Traffic images](https://data.gov.sg/dataset/traffic-images). 
+Traffic images were scraped during the period of **20 March 2021** from **0000 to 2359 hours** periodic at 1 minute intervals via Data.gov.sg by running my own scrap_lta_cctv.py file which would make a web API call to **data.gov.sg** via https://api.data.gov.sg/v1/transport/traffic-images. Details on the parameters returned from the API can be referenced in the following link: [Parameters link](https://data.gov.sg/dataset/traffic-images). 
 
 Data was tidied up and stored under LTAdatasets folder(available on Google Drive for download) which are grouped in folders by CCTV IDs representing different CCTV locations in Singapore, (eg. 1001). The tidied dataset can be downloaded via [dataset link](https://drive.google.com/file/d/1LMBT6EU_hvXWR03-rN32gkxA-RTf76_Q/view?usp=sharing). Upon downloading, please extract and place it in the working directory where the repo is cloned. There would be 87 folders (identified by 4 digit identifiers) containing traffic footages of a particular location.
 
@@ -11,7 +11,7 @@ In each subfolders, it contains subfolders named *annotate* and *unannotate* CCT
 
 Due to time constraints, only **27** CCTV IDs, each comprising 100 images in the annotated subfolders were manually annotated by myself for model training purposes during the course in Apr 2021. **Please note that the images are not in HD format and hence images maybe blurry at some time periods due to environment factors.** 
 
-Stitched video of images from the **27** stated CCTV IDs are available for download if you want to test out the model for inference on video instead.[Stitched video download] (https://drive.google.com/file/d/1hgiw6rlvBf9W1ApU4UIFBbEjAiQC1xoT/view?usp=sharing)
+Stitched video of images from the **27** stated CCTV IDs are available for download if you want to test out the model for inference on video instead. [Stitched video download] (https://drive.google.com/file/d/1hgiw6rlvBf9W1ApU4UIFBbEjAiQC1xoT/view?usp=sharing)
 
 The annotated IDs are:
 - 1001 to 1006 (inclusive)
