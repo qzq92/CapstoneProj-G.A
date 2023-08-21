@@ -139,7 +139,7 @@ In view of the periodic maintenance regime that includes periodic road inspectio
 
 ## Summary of Findings & Recommendations
 ---
-The results of my model inference for each model trained are located in folders under darknet/backup directory. A mean average precision of 48% was achieved using YOLOv4 model with default hyperparameter configuration and this value was calculated based on 501 validation images out of 516 validation image (97.1%) detection rate. In view of the large amount of unannotated data that could be used for training, I believe the inclusion of those data with corresponding annotations could potentially push the mean average precision above 50% when there is proper pre-processing as well as optimal hyperparameter tuning.
+The results of my model inference for each model trained are located in folders under darknet/backup directory. A mean average precision of 48% was achieved using **YOLOv4** model with default hyperparameter configuration and this value was calculated based on 501 validation images out of 516 validation image (97.1%) detection rate. In view of the large amount of unannotated data that could be used for training, I believe the inclusion of those data with corresponding annotations could potentially push the mean average precision above 50% when there is proper pre-processing as well as optimal hyperparameter tuning.
 
 ## Sample predictions 1 (Top: Manual labelled, Bottom: Vehicle detected by model) 
 ![Alt text](sample_output2.png?raw=true)
@@ -177,7 +177,7 @@ Please follow the steps below to setup your environment for model training with 
 - git-lfs (tool to extend git for versioning large files) --Optional
 
 
-## Trained YOLOv4 model weights
+## Trained **YOLOv4** model weights
 You may download the model weights that were saved during the process of training from the following link. [Trained_weights](https://drive.google.com/file/d/107W85LuYDNhOcZdQ6jXGrlYnUTqPlXQI/view?usp=sharing). 
 
 Extract the folders and place them into `darknet/backup` folder after darknet folder has been cloned into the repository to facilitate model inference using trained-weights.
